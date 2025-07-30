@@ -1,56 +1,77 @@
-# 🧠 Sentiment Analysis of Amazon Product Reviews with Emoji Effects
+# 🧠 Sentiment Analysis of Amazon Product Reviews with Emoji Animation
 
-This web app analyzes product reviews and predicts whether the sentiment is **positive**, **neutral**, or **negative**. Based on the prediction, it triggers a dynamic emoji animation to visually reflect the mood of the review.
+This web app predicts the sentiment of product reviews as **positive**, **neutral**, or **negative**, and displays an animated emoji burst to match the emotion.
 
 ---
 
-## 🔗 Live App  
-🎯 Try it out here: [Sentiment Analysis Web App](https://huggingface.co/spaces/HarshitaSuri/SentimentAnalysis)
+## 🔗 Quick Access
 
-## 🧪 Training Notebook  
-📓 See the model training process on Colab: [Google Colab Link](https://colab.research.google.com/drive/1HmNJ3EeoVdi8Ax0-EGD3sxFeOV4t76F5?usp=sharing)
+👉 **[🚀 Try the Live App](https://huggingface.co/spaces/HarshitaSuri/SentimentAnalysis)**  
+📓 **[🧾 View Training Notebook (Colab)](https://colab.research.google.com/drive/1HmNJ3EeoVdi8Ax0-EGD3sxFeOV4t76F5?usp=sharing)**  
+📂 **[📁 Dataset on Kaggle](https://www.kaggle.com/datasets/arhamrumi/amazon-product-reviews)**
 
 ---
 
 ## 📌 Features
+
+- ✅ Predicts sentiment: Positive, Neutral, or Negative
+- ✅ Emoji animation based on the prediction result
 - ✅ Built using a **Naive Bayes classifier**
-- ✅ Trained on the [Amazon Product Reviews dataset](https://www.kaggle.com/datasets/arhamrumi/amazon-product-reviews)
-- ✅ NLP preprocessing: tokenization, stopword removal, stemming, TF-IDF
-- ✅ Balanced dataset with equal samples of positive, neutral, and negative reviews
-- ✅ Animated emoji bursts that match the sentiment
-- ✅ Clean, interactive interface powered by **Gradio**
-
----
-
-## 📊 Example Review Inputs
-
-| Review | Prediction | Emoji Animation |
-|--------|------------|-----------------|
-| `"Absolutely loved it!"` | Positive | 🎉✨😍 |
-| `"It's okay, nothing special."` | Neutral | 😐🤔🫤 |
-| `"Worst purchase ever!"` | Negative | 😡💩😭 |
+- ✅ NLP preprocessing pipeline:
+  - Tokenization
+  - Stopword removal
+  - Stemming
+  - TF-IDF vectorization
+- ✅ Balanced dataset using downsampling
+- ✅ Web app built with Gradio and deployed on Hugging Face Spaces
 
 ---
 
 ## 🛠 Tech Stack
-- Python
-- Scikit-learn (Naive Bayes)
-- NLTK (text preprocessing)
-- Gradio (web UI)
-- HTML & CSS (emoji animation)
+
+- **Python**
+- **Scikit-learn** – Naive Bayes model
+- **NLTK** – Tokenization, Stopword Removal, Stemming
+- **TF-IDF Vectorizer** – Feature extraction
+- **Gradio** – Web interface
+- **HTML & CSS** – Custom emoji animation
 
 ---
 
-## 📁 Dataset Used
-- **Name**: Amazon Product Reviews  
-- **Source**: [Kaggle - arhamrumi/amazon-product-reviews](https://www.kaggle.com/datasets/arhamrumi/amazon-product-reviews)  
-- **Size**: ~275,000 reviews  
-- **Preprocessing**: Cleaned, balanced, and labeled reviews as `positive`, `neutral`, or `negative`.
+## 💬 Example Review Predictions
+
+| Review                                 | Predicted Sentiment | Emoji Animation         |
+|----------------------------------------|----------------------|--------------------------|
+| `"Absolutely loved it!"`               | Positive             | 🎉✨😍🥳                   |
+| `"It's okay, nothing special."`        | Neutral              | 😐🤔🫤                    |
+| `"Worst purchase ever, waste of money"`| Negative             | 😡💩😭💔                   |
+
+---
+
+## 📁 Dataset Details
+
+- **Source**: [Kaggle - arhamrumi/amazon-product-reviews](https://www.kaggle.com/datasets/arhamrumi/amazon-product-reviews)
+- **Reviews**: ~275,000
+- **Labels**: Derived from star ratings and grouped as:
+  - 1–2 stars → Negative  
+  - 3 stars → Neutral  
+  - 4–5 stars → Positive
+- **Preprocessing**:
+  - Tokenization of review text
+  - Stopword removal
+  - Stemming using NLTK
+  - Feature transformation via TF-IDF
+- **Balancing**: Downsampled to equalize class sizes
 
 ---
 
 ## 🚀 How to Use
-Enter any product review in the textbox, and get an instant sentiment prediction along with animated emojis reflecting the mood.
+
+1. Enter any product-style review in the textbox  
+2. Click **Submit**  
+3. View the sentiment prediction  
+4. Watch emojis burst from the bottom of your screen based on the sentiment 🎉
 
 ---
 
+> 👩‍💻 Developed by **Harshita Suri** as an NLP + ML project combining prediction and visual interaction
