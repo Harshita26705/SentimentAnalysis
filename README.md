@@ -58,7 +58,7 @@ A lightweight web app to analyze product review sentiment using Naive Bayes and 
   - 1–2 stars → Negative  
   - 3 stars → Neutral  
   - 4–5 stars → Positive  
-- Balanced: Downsampled to equal samples in each class
+- Balanced: Upsampled to equal samples in each class
 - Preprocessed using tokenization, stopword removal, stemming, and TF-IDF
 
 ---
